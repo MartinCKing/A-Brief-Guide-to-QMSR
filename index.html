@@ -3,26 +3,40 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>A Brief Guide to QMSR</title>
+    <title>Video Email</title>
     <style>
         body {
-            background-color: black;
-            color: white;
-            text-align: center;
+            font-family: Arial, sans-serif;
+            margin: 20px;
         }
-        iframe {
-            border: none;
+        .thumbnail {
+            display: block;
+            width: 100%;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        .play-button {
+            position: relative;
+            display: inline-block;
+        }
+        .play-button img {
+            width: 100%;
+        }
+        .play-button::after {
+            content: url('https://img.icons8.com/ios-filled/50/000000/play-button-circled.png');
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 50px;
+            height: 50px;
         }
     </style>
-        <script>
-        function resizeWindow() {
-            window.resizeTo(720, 1080);
-        }
-    </script>
 </head>
 <body>
-    <h1>A Brief Guide to QMSR</h1>
-    <iframe src="https://drive.google.com/file/d/1OWsmol8pGCNoDXd2yu1Yw4U9Ctlbw3eC/preview" width="640" height="480" allow="autoplay"></iframe>
-    <p>If the video does not play, click <a href="https://drive.google.com/file/d/1OWsmol8pGCNoDXd2yu1Yw4U9Ctlbw3eC/view?usp=sharing" target="_blank">here</a> to watch it.</p>
+    <h1>Watch the Video</h1>
+    <a href="https://www.youtube.com/watch?v=5xlriwYoq6c" class="play-button">
+        <img src="SCI-LIFE.png" alt="Watch Video" class="thumbnail">
+    </a>
 </body>
 </html>
